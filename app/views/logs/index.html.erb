@@ -1,5 +1,7 @@
 <h1>I LOVE</h1>
 
+<h4>What do you love <%= link_to 'Tell it here', new_log_path %> only once per person</h4>
+
 <table>
 
 <% @logs.each do |log| %>
@@ -14,5 +16,3 @@
 </table>
 
 <br />
-
-<h4>What do you love <%= link_to 'Tell it here', new_log_path %> only once per person</h4>
