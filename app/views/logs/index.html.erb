@@ -1,10 +1,11 @@
-<h1>Listing logs</h1>
+<h1>I LOVE</h1>
 
 <table>
 
 <% @logs.each do |log| %>
   <tr>
     <td>My name is <%= log.name %></td>
+    <td>and i LOVE</td>
     <td><%= log.love %></td>
     <td><%= link_to image_tag( 'http://www.ajblog.dk/facebook_32.png'), log.facebook %></td>
     <td><%= link_to image_tag( 'http://www.ajblog.dk/twitter_32.png'), log.twitter %></td>
@@ -14,4 +15,4 @@
 
 <br />
 
-<%= link_to 'New Log', new_log_path %>
+<h4>What do you love <%= link_to 'Tell it here', new_log_path %> only once per person</h4>
