@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @log.name %>
+</p>
+
+<p>
+  <b>Love:</b>
+  <%= @log.love %>
+</p>
+
+<p>
+  <b>Facebook:</b>
+  <%= @log.facebook %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @log.twitter %>
+</p>
+
+
+<%= link_to 'Edit', edit_log_path(@log) %> |
+<%= link_to 'Back', logs_path %>
