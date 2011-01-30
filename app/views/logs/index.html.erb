@@ -1,25 +1,13 @@
 <h1>Listing logs</h1>
 
 <table>
-  <tr>
-    <th>Name</th>
-    <th>Love</th>
-    <th>Facebook</th>
-    <th>Twitter</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @logs.each do |log| %>
   <tr>
-    <td><%= log.name %></td>
+    <td>My name is <%= log.name %></td>
     <td><%= log.love %></td>
-    <td><%= log.facebook %></td>
-    <td><%= log.twitter %></td>
-    <td><%= link_to 'Show', log %></td>
-    <td><%= link_to 'Edit', edit_log_path(log) %></td>
-    <td><%= link_to 'Destroy', log, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to image_tag( 'http://www.ajblog.dk/facebook_32.png'), log.facebook %></td>
+    <td><%= link_to image_tag( 'http://www.ajblog.dk/twitter_32.png'), log.twitter %></td>
   </tr>
 <% end %>
 </table>
